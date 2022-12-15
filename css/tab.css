@@ -1,0 +1,188 @@
+/**
+ * Tabs
+ */
+ .tabs {
+  display: flex;
+  flex-wrap: wrap;
+}
+.tabs label {
+  order: 1;
+  display: block;
+  padding: 1rem 2rem 1rem 2rem;
+  margin-right: 0.2rem;
+  cursor: pointer;
+  background: #32357f;
+  font-weight: bold;
+  transition: background ease 0.2s;
+  padding-right: 345px;
+  padding-left: 345px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+}
+
+
+@media only screen and (max-width: 1920px) {
+  .tabs label {
+    order: 1;
+    display: block;
+    padding: 1rem 2rem 1rem 2rem;
+    margin-right: 0.2rem;
+    cursor: pointer;
+    background: #32357f;
+    font-weight: bold;
+    transition: background ease 0.2s;
+    padding-right: 375px;
+    padding-left: 375px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+  }
+}
+
+@media only screen and (max-width: 1536px) {
+  .tabs label {
+    order: 1;
+    display: block;
+    padding: 1rem 2rem 1rem 2rem;
+    margin-right: 0.2rem;
+    cursor: pointer;
+    background: #32357f;
+    font-weight: bold;
+    transition: background ease 0.2s;
+    padding-right: 270px;
+    padding-left: 270px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+  }
+}
+
+@media only screen and (max-width: 1360px) {
+  .tabs label {
+    order: 1;
+    display: block;
+    padding: 1rem 2rem 1rem 2rem;
+    margin-right: 0.2rem;
+    cursor: pointer;
+    background: #32357f;
+    font-weight: bold;
+    transition: background ease 0.2s;
+    padding-right: 225px;
+    padding-left: 225px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .tabs label {
+    order: 1;
+    display: block;
+    padding: 1rem 2rem 1rem 2rem;
+    margin-right: 0.2rem;
+    cursor: pointer;
+    background: #32357f;
+    font-weight: bold;
+    transition: background ease 0.2s;
+    padding-right: 225px;
+    padding-left: 225px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .tabs label {
+    order: 1;
+    display: block;
+    padding: 1rem 2rem 1rem 2rem;
+    margin-right: 0.2rem;
+    cursor: pointer;
+    background: #32357f;
+    font-weight: bold;
+    transition: background ease 0.2s;
+    padding-right: 165px;
+    padding-left: 165px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  .tabs label {
+    order: 1;
+    display: block;
+    padding: 1rem 2rem 1rem 2rem;
+    margin-right: 0.2rem;
+    cursor: pointer;
+    background: #32357f;
+    font-weight: bold;
+    transition: background ease 0.2s;
+    padding-right: 118px;
+    padding-left: 118px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .tabs label {
+    order: 1;
+    display: block;
+    padding: 1rem 2rem 1rem 2rem;
+    margin-right: 0.2rem;
+    cursor: pointer;
+    background: #32357f;
+    font-weight: bold;
+    transition: background ease 0.2s;
+    padding-right: 120px;
+    padding-left: 120px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .tabs label {
+    order: 1;
+    display: block;
+    padding: 1rem 2rem 1rem 2rem;
+    margin-right: 0.2rem;
+    cursor: pointer;
+    background: #32357f;
+    font-weight: bold;
+    transition: background ease 0.2s;
+    padding-right: 85px;
+    padding-left: 85px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+  }
+}
+
+.tabs .tab {
+  order: 99;
+  flex-grow: 1;
+  width: 70%;
+  display: none;
+  padding: 1rem;
+  background: #fff;
+}
+.tabs input[type="radio"] {
+  display: none;
+}
+.tabs input[type="radio"]:checked + label {
+  background: #32357f;
+}
+.tabs input[type="radio"]:checked + label + .tab {
+  display: block;
+}
+@media (max-width: 45em) {
+  /**
+ * Generic Styling
+*/  .tabs .tab, .tabs label {
+    order: initial;
+  }
+  .tabs label {
+    width: 100%;
+    margin-right: 0;
+    margin-top: 0.2rem;
+  }
+}

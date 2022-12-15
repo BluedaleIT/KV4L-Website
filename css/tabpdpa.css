@@ -1,0 +1,104 @@
+/**
+ * Tabs
+ */
+ .tabs {
+	display: flex;
+  flex-wrap: wrap;
+  
+}
+.tabs label {
+	order: 1; 
+	display: block;
+	padding: 1rem 2rem;
+	margin-right: 0.1rem;
+	cursor: pointer;
+  background:  #32357f;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: background ease 0.2s;
+ margin-left: 150px;
+  padding-left: 200px;
+  padding-right: 200px;
+  
+}
+@media (min-width: 420px) {
+  .tabs label {
+    order: 1; 
+    display: block;
+    padding: 1rem 2rem;
+    margin-right: 0.1rem;
+    cursor: pointer;
+    background:  #32357f;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: background ease 0.2s;
+   margin-left: 27px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+/* For large devices (e.g. desktops) */
+@media (min-width: 760px) {
+  .tabs label {
+    max-width: 100%;
+    
+  }
+}
+
+.label1{
+  order: 1; 
+	display: block;
+	cursor: pointer;
+  background:  #32357f;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: background ease 0.2s;
+  margin-right: 0px;
+
+  
+}
+.tabs .tab {
+  order: 99;
+  flex-grow: 1;
+	width: 100%;
+	display: none;
+  padding: 0rem;
+  background: #fff;
+  margin-right: 0.1rem;
+}
+.tabs input[type="radio"] {
+	display: none;
+}
+.tabs input[type="radio"]:checked + label {
+	background: #32357f;
+}
+.tabs input[type="radio"]:checked + label + .tab {
+	display: block;
+}
+
+@media (max-width: 45em) {
+  .tabs .tab,
+  .tabs label {
+    order: initial;
+  }
+  .tabs label {
+    width: 100%;
+    margin-right: 0;
+    margin-top: 0.2rem;
+  }
+}
+
+/**
+ * Generic Styling
+*/
+.div2 {
+
+  min-height: 10vh;
+	box-sizing: border-box;
+  padding-top: 5vh;
+  
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-weight: 300;
+  line-height: 1.5;
+  max-width: 60rem;
+  margin: 0;
+  font-size: 112%;
+}
+

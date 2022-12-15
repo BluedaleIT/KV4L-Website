@@ -1,0 +1,1 @@
+function openReadMore(e,t){document.getElementById(e).style.display="block",document.getElementById(t).style.display="none"}function closeReadMore(e,t){document.getElementById(e).style.display="none",document.getElementById(t).style.display="block"}

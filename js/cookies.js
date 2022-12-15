@@ -1,0 +1,1 @@
+const cookieBanner=document.querySelector(".cookie-banner-container"),cookieBtn=document.querySelector(".cookie-banner-container button");setTimeout(()=>{sessionStorage.getItem("bannerDisplayed")||cookieBanner.classList.add("active")},1e3),cookieBtn.addEventListener("click",()=>{cookieBanner.classList.remove("active"),sessionStorage.setItem("bannerDisplayed","true")});

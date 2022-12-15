@@ -1,0 +1,43 @@
+.parent-box {
+    background-color: whitesmoke;
+    display: flex;
+}
+
+.box {
+
+    height: 100px;
+    background-color: grey;
+    margin: 10px;
+}
+
+.owl-carousel .owl-nav button.owl-prev {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0 !important;
+    font: inherit;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: blue;
+}
+
+.owl-carousel .owl-nav button.owl-next {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0 !important;
+    font: inherit;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: blue;
+}
