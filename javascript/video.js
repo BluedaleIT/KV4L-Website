@@ -1,1 +1,0 @@
-var myvid=document.getElementById("myvideo");myvid.addEventListener("ended",function(e){var c=document.querySelector("#myvideo source.active"),d=document.querySelector("#myvideo source.active + source")||document.querySelector("#myvideo source:first-child");c.className="",d.className="active",myvid.src=d.src,myvid.play()});

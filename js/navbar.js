@@ -1,1 +1,0 @@
-$(document).ready(function(){var i=0;$(window).scroll(function(){var s=$(this).scrollTop();s<100?showTopNav():0<s&&s<$(document).height()-$(window).height()&&(i<s?$(".navbar").removeClass("is-visible").addClass("is-hidden"):$(".navbar").removeClass("is-hidden").addClass("is-visible").addClass("scrolling"),i=s)})});
