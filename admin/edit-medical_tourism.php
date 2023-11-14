@@ -105,60 +105,60 @@ if (isset($_GET['logout'])) {
                                         <tbody>
                                             <?php
 
-                                            $query = "SELECT * FROM accommodation  ORDER BY accommodation_ORDER DESC";
+                                            $query = "SELECT * FROM medical_tourism  ORDER BY medical_tourism_ORDER DESC";
                                             $result = mysqli_query($db, $query);
                                             while ($row = mysqli_fetch_assoc($result)) { ?>
                                                 <tr>
-                                                    <td id="id-<?php echo $row['accommodation_id'] ?>">
-                                                        <?php echo $row['accommodation_id'] ?>
+                                                    <td id="id-<?php echo $row['medical_tourism_id'] ?>">
+                                                        <?php echo $row['medical_tourism_id'] ?>
                                                     </td>
                                                     <td class="text-center">
                                                         <?php
-                                                        echo '<a href="#" class="" onclick="editmodal(' . $row['accommodation_id'] . ');" id="modaledit"><i class="fas fa-pen"></i></a><br>';
+                                                        echo '<a href="#" class="" onclick="editmodal(' . $row['medical_tourism_id'] . ');" id="modaledit"><i class="fas fa-pen"></i></a><br>';
                                                         ?>
                                                     </td>
-                                                    <td id="title-<?php echo $row['accommodation_id'] ?>">
-                                                        <?php echo $row['accommodation_title']; ?>
+                                                    <td id="title-<?php echo $row['medical_tourism_id'] ?>">
+                                                        <?php echo $row['medical_tourism_title']; ?>
                                                     </td>
 
-                                                    <td id="content-<?php echo $row['accommodation_id'] ?>">
-                                                        <?php echo $row['accommodation_content']; ?>
+                                                    <td id="content-<?php echo $row['medical_tourism_id'] ?>">
+                                                        <?php echo $row['medical_tourism_content']; ?>
                                                     </td>
 
-                                                    <td id="content2-<?php echo $row['accommodation_id'] ?>">
-                                                        <?php echo $row['accommodation_content2']; ?>
+                                                    <td id="content2-<?php echo $row['medical_tourism_id'] ?>">
+                                                        <?php echo $row['medical_tourism_content2']; ?>
                                                     </td>
 
-                                                    <td id="location-<?php echo $row['accommodation_id'] ?>">
-                                                        <?php echo $row['accommodation_location']; ?>
+                                                    <td id="location-<?php echo $row['medical_tourism_id'] ?>">
+                                                        <?php echo $row['medical_tourism_location']; ?>
                                                     </td>
 
-                                                    <td id="locationurl-<?php echo $row['accommodation_id'] ?>">
-                                                        <?php echo $row['accommodation_locationurl']; ?>
+                                                    <td id="locationurl-<?php echo $row['medical_tourism_id'] ?>">
+                                                        <?php echo $row['medical_tourism_locationurl']; ?>
                                                     </td>
 
-                                                    <td id="website-<?php echo $row['accommodation_id'] ?>">
-                                                        <?php echo $row['accommodation_website']; ?>
+                                                    <td id="website-<?php echo $row['medical_tourism_id'] ?>">
+                                                        <?php echo $row['medical_tourism_website']; ?>
                                                     </td>
 
-                                                    <td id="image-<?php echo $row['accommodation_id'] ?>">
-                                                        <?php echo $row['accommodation_image']; ?>
+                                                    <td id="image-<?php echo $row['medical_tourism_id'] ?>">
+                                                        <?php echo $row['medical_tourism_image']; ?>
                                                     </td>
 
-                                                    <td id="phone-<?php echo $row['accommodation_id'] ?>">
-                                                        <?php echo $row['accommodation_phone']; ?>
+                                                    <td id="phone-<?php echo $row['medical_tourism_id'] ?>">
+                                                        <?php echo $row['medical_tourism_phone']; ?>
                                                     </td>
 
-                                                    <td id="hours-<?php echo $row['accommodation_id'] ?>">
-                                                        <?php echo $row['accommodation_hours']; ?>
+                                                    <td id="hours-<?php echo $row['medical_tourism_id'] ?>">
+                                                        <?php echo $row['medical_tourism_hours']; ?>
                                                     </td>
 
-                                                    <td id="category-<?php echo $row['accommodation_id'] ?>">
-                                                        <?php echo $row['accommodation_category']; ?>
+                                                    <td id="category-<?php echo $row['medical_tourism_id'] ?>">
+                                                        <?php echo $row['medical_tourism_category']; ?>
                                                     </td>
 
-                                                    <td id="order-<?php echo $row['accommodation_id'] ?>">
-                                                        <?php echo $row['accommodation_order']; ?>
+                                                    <td id="order-<?php echo $row['medical_tourism_id'] ?>">
+                                                        <?php echo $row['medical_tourism_order']; ?>
                                                     </td>
                                                 </tr>
 
@@ -288,7 +288,7 @@ if (isset($_GET['logout'])) {
                     </div>
                     <div class="modal-footer">
 
-                        <button class="btn btn-primary" type="submit" value="Upload Image" name="upload_accommodation">Create</button>
+                        <button class="btn btn-primary" type="submit" value="Upload Image" name="upload_medical_tourism">Create</button>
 
                     </div>
                 </form>
@@ -355,8 +355,8 @@ if (isset($_GET['logout'])) {
                     </div>
                     <div class="modal-footer">
 
-                        <button type="submit" class="btn btn-danger " name="delete_accommodation">Delete</button>
-                        <button class="btn btn-primary" type="submit" name="edit_accommodation">Save
+                        <button type="submit" class="btn btn-danger " name="delete_medical_tourism">Delete</button>
+                        <button class="btn btn-primary" type="submit" name="edit_medical_tourism">Save
                             Changes</button>
 
                     </div>

@@ -95,34 +95,51 @@
     </li>
     <!-- Nav Item - Pages Collapse Menu -->
     <li class="nav-item" id="editnav">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true"
-            aria-controls="collapsePages">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true" aria-controls="collapsePages">
             <i class="fas fa-fw fa-folder"></i>
             <span>Edit Pages</span>
         </a>
         <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
-                <!-- <h6 class="collapse-header">Login Screens:</h6>
-                        <a class="collapse-item" href="login.html">Login</a>
-                        <a class="collapse-item" href="register.html">Register</a>
-                        <a class="collapse-item" href="forgot-password.html">Forgot Password</a>
-                        <div class="collapse-divider"></div>
-                        <h6 class="collapse-header">Other Pages:</h6>
-                        <a class="collapse-item" href="404.html">404 Page</a>-->
                 <a class="collapse-item" href="edit-index.php">Index</a>
                 <a class="collapse-item" href="edit-blog.php">Blog</a>
                 <a class="collapse-item" href="edit-ebook.php">E-book</a>
                 <a class="collapse-item" href="edit-pageviews.php">Page Views</a>
-                <a class="collapse-item" href="edit-explorekl.php">Explore KL</a>
-                <a class="collapse-item" href="edit-beyondkl.php">Beyond KL</a>
-                <a class="collapse-item" href="edit-medical-tourism.php">Medical Tourism</a>
-                <a class="collapse-item" href="edit-places-to-shop.php">Places To Shop</a>
-                <a class="collapse-item" href="edit-spa.php">Spa</a>
-                <a class="collapse-item" href="edit-accomodation.php">Place To Stay</a>
-                
 
+                <!-- Explore KV Dropdown -->
+                <a class="collapse-item" data-toggle="collapse" href="#explorekvMenu" aria-expanded="false" role="button">
+                    Explore KV <i class="fas fa-chevron-down"></i>
+                </a>
+                <div class="collapse" id="explorekvMenu">
+                    <a class="collapse-item" href="edit-explorekv_ss.php">Sightseeing</a>
+                    <a class="collapse-item" href="edit-explorekv_eco.php">EcoTourism</a>
+                    <a class="collapse-item" href="edit-explorekv_agro.php">AgroTourism</a>
+                    <a class="collapse-item" href="edit-explorekv_gh.php">GoldenHour</a>
+                    <a class="collapse-item" href="edit-explorekv_eo.php">EatingOut</a>
+                    <a class="collapse-item" href="edit-explorekv_pwor.php">PlacesOfWorship</a>
+                </div>
+
+                <!-- What To Do Dropdown -->
+                <a class="collapse-item" data-toggle="collapse" href="#whatToDoMenu" aria-expanded="false" role="button">
+                    What To Do <i class="fas fa-chevron-down"></i>
+                </a>
+                <div class="collapse" id="whatToDoMenu">
+                    <a class="collapse-item" href="edit-explorekv_no.php">NightOut</a>
+                    <a class="collapse-item" href="edit-explorekv_kv4k.php">KVForKids</a>
+                    <a class="collapse-item" href="edit-explorekv_sports.php">Sports&Recreation</a>
+                    <a class="collapse-item" href="edit-explorekv_ig.php">InstagrammableCafes</a>
+                    <a class="collapse-item" href="edit-explorekv_beauty.php">Beauty&Wellness</a>
+                </div>
+
+                <a class="collapse-item" href="edit-shopkv.php">Shopping In KV</a>
+                <a class="collapse-item" href="edit-spakv.php">Spa Time</a>
+                <a class="collapse-item" href="edit-medical_tourism.php">Medical Tourism</a>
+                <a class="collapse-item" href="edit-accomodation.php">Accommodation</a>
             </div>
         </div>
+
+
+
     </li>
 
     <!-- Nav Item - Charts -->

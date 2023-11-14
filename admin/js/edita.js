@@ -1,42 +1,53 @@
 function removeHttp(url) {
   return url.replace(/^https?:\/\//, "");
 }
-function editmodaltop(id) {
+function editmodal(id) {
   // console.log("test");
   // console.log(id);
 
   // var filename = document.getElementById("filename-" + id).innerText;
-  var name = document.getElementById("nameatop-" + id).innerText;
-  var location = document.getElementById("locationatop-" + id).innerText;
-  var locationurl = document.getElementById("locationurlatop-" + id).innerText;
-  var content = document.getElementById("contentatop-" + id).innerText;
-  var imagename = document.getElementById("filenameatop-" + id).innerText;
-  var hours = document.getElementById("hoursatop-" + id).innerText;
-  var phone = document.getElementById("phoneatop-" + id).innerText;
-  var order = document.getElementById("orderatop-" + id).innerText;
+  var id = document.getElementById("id-" + id).innerText;
+  var title = document.getElementById("title-" + id).innerText;
+  var content = document.getElementById("content-" + id).innerText;
+  var content2 = document.getElementById("content2-" + id).innerText;
+  var location = document.getElementById("location-" + id).innerText;
+  var locationurl = document.getElementById("locationurl-" + id).innerText;
+  var website = document.getElementById("website-" + id).innerText;
+  var image = document.getElementById("image-" + id).innerText;
+  var phone = document.getElementById("phone-" + id).innerText;
+  var hours = document.getElementById("hours-" + id).innerText;
+  var category = document.getElementById("category-" + id).innerText;
+  var order = document.getElementById("order-" + id).innerText;
 
   // console.log(filename);
   // console.log(name);
   // console.log(order);
-  var formname = document.getElementById("nameatop");
-  var formlocation = document.getElementById("locationatop");
-  var formlocationurl = document.getElementById("locationurlatop");
-  var formcontent = document.getElementById("contentatop");
-  var formorder = document.getElementById("orderatop");
-  var formid = document.getElementById("atopid");
-  var formimage = document.getElementById("imagenameatop");
-  var formhours = document.getElementById("hoursatop");
-  var formphone = document.getElementById("phoneatop");
+  var formid = document.getElementById("id-form");
+  var formtitle = document.getElementById("title-form");
+  var formcontent = document.getElementById("content-form");
+  var formcontent2 = document.getElementById("content2-form");
+  var formlocation = document.getElementById("location-form");
+  var formlocationurl = document.getElementById("locationurl-form");
+  var formwebsite = document.getElementById("website-form");
+  var formimage = document.getElementById("imagename-form");
+  var formphone = document.getElementById("phone-form");
+  var formhours = document.getElementById("hours-form");
+  var formcategory = document.getElementById("category-form");
+  var formorder = document.getElementById("order-form");
+
   formid.value = id;
+  formtitle.value = title;
+  formcontent.value = content;  
+  formcontent2.value = content2;
   formlocation.value = location;
-  formimage.value = imagename;  
   formlocationurl.value = locationurl;
-  formcontent.value = content;
-  formorder.value = order;
-  formhours.value = hours;
+  formwebsite.value = website;
   formphone.value = phone;
-  formname.value = name;
-  $("#edittopmodal").modal("show");
+  formimage.value = image;
+  formhours.value = hours;
+  formcategory.value = category;
+  formorder.value = order;
+  $("#editmodal").modal("show");
 }
 
 

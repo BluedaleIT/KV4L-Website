@@ -326,7 +326,7 @@
 
                               </div>
                               <div class="col-md-4 order-1  text-center align-self-center">
-                                <img src="assets/img/wtd/sports/theme/<?php echo $row['explorekv_sports_image'] ?>"
+                                <img src="assets/img/wtd/sports/tp/<?php echo $row['explorekv_sports_image'] ?>"
                                   alt="<?php echo urldecode($row['explorekv_sports_title']) ?>" class="img-fluid"
                                   loading="lazy">
                               </div>
@@ -381,7 +381,7 @@
 
                               </div>
                               <div class="col-md-4 order-md-2 order-1 text-center align-self-center ">
-                                <img src="assets/img/wtd/sports/theme/<?php echo $row['explorekv_sports_image'] ?>"
+                                <img src="assets/img/wtd/sports/tp/<?php echo $row['explorekv_sports_image'] ?>"
                                   alt="<?php echo urldecode($row['explorekv_sports_title']) ?>" class="img-fluid"
                                   loading="lazy">
                               </div>
@@ -457,7 +457,7 @@
 
                               </div>
                               <div class="col-md-4 order-1  text-center align-self-center">
-                                <img src="assets/img/wtd/sports/extreme/<?php echo $row['explorekv_sports_image'] ?>"
+                                <img src="assets/img/wtd/sports/ex/<?php echo $row['explorekv_sports_image'] ?>"
                                   alt="<?php echo urldecode($row['explorekv_sports_title']) ?>" class="img-fluid"
                                   loading="lazy">
                               </div>
@@ -509,7 +509,7 @@
 
                               </div>
                               <div class="col-md-4 order-md-2 order-1 text-center align-self-center ">
-                                <img src="assets/img/wtd/sports/extreme/<?php echo $row['explorekv_sports_image'] ?>"
+                                <img src="assets/img/wtd/sports/ex/<?php echo $row['explorekv_sports_image'] ?>"
                                   alt="<?php echo urldecode($row['explorekv_sports_title']) ?>" class="img-fluid"
                                   loading="lazy">
                               </div>

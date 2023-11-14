@@ -24,7 +24,7 @@ if (isset($_GET['logout'])) {
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>KLTG ADMIN - Edit Accomodation</title>
+    <title>KLTG ADMIN - Edit WTD KV4K</title>
 
     <!-- Custom fonts for this template -->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -59,7 +59,7 @@ if (isset($_GET['logout'])) {
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-2 text-gray-800">Accomodation Page</h1>
+                    <h1 class="h3 mb-2 text-gray-800">Spa Time Page</h1>
                     <p class="mb-4">DataTables is a third party plugin that is used to generate the demo table below.
                         For more information about DataTables, please visit the <a target="_blank" href="https://datatables.net">official DataTables documentation</a>.</p>
 
@@ -105,60 +105,60 @@ if (isset($_GET['logout'])) {
                                         <tbody>
                                             <?php
 
-                                            $query = "SELECT * FROM accommodation  ORDER BY accommodation_ORDER DESC";
+                                            $query = "SELECT * FROM spakv  ORDER BY spakv_ORDER DESC";
                                             $result = mysqli_query($db, $query);
                                             while ($row = mysqli_fetch_assoc($result)) { ?>
                                                 <tr>
-                                                    <td id="id-<?php echo $row['accommodation_id'] ?>">
-                                                        <?php echo $row['accommodation_id'] ?>
+                                                    <td id="id-<?php echo $row['spakv_id'] ?>">
+                                                        <?php echo $row['spakv_id'] ?>
                                                     </td>
                                                     <td class="text-center">
                                                         <?php
-                                                        echo '<a href="#" class="" onclick="editmodal(' . $row['accommodation_id'] . ');" id="modaledit"><i class="fas fa-pen"></i></a><br>';
+                                                        echo '<a href="#" class="" onclick="editmodal(' . $row['spakv_id'] . ');" id="modaledit"><i class="fas fa-pen"></i></a><br>';
                                                         ?>
                                                     </td>
-                                                    <td id="title-<?php echo $row['accommodation_id'] ?>">
-                                                        <?php echo $row['accommodation_title']; ?>
+                                                    <td id="title-<?php echo $row['spakv_id'] ?>">
+                                                        <?php echo $row['spakv_title']; ?>
                                                     </td>
 
-                                                    <td id="content-<?php echo $row['accommodation_id'] ?>">
-                                                        <?php echo $row['accommodation_content']; ?>
+                                                    <td id="content-<?php echo $row['spakv_id'] ?>">
+                                                        <?php echo $row['spakv_content']; ?>
                                                     </td>
 
-                                                    <td id="content2-<?php echo $row['accommodation_id'] ?>">
-                                                        <?php echo $row['accommodation_content2']; ?>
+                                                    <td id="content2-<?php echo $row['spakv_id'] ?>">
+                                                        <?php echo $row['spakv_content2']; ?>
                                                     </td>
 
-                                                    <td id="location-<?php echo $row['accommodation_id'] ?>">
-                                                        <?php echo $row['accommodation_location']; ?>
+                                                    <td id="location-<?php echo $row['spakv_id'] ?>">
+                                                        <?php echo $row['spakv_location']; ?>
                                                     </td>
 
-                                                    <td id="locationurl-<?php echo $row['accommodation_id'] ?>">
-                                                        <?php echo $row['accommodation_locationurl']; ?>
+                                                    <td id="locationurl-<?php echo $row['spakv_id'] ?>">
+                                                        <?php echo $row['spakv_locationurl']; ?>
                                                     </td>
 
-                                                    <td id="website-<?php echo $row['accommodation_id'] ?>">
-                                                        <?php echo $row['accommodation_website']; ?>
+                                                    <td id="website-<?php echo $row['spakv_id'] ?>">
+                                                        <?php echo $row['spakv_website']; ?>
                                                     </td>
 
-                                                    <td id="image-<?php echo $row['accommodation_id'] ?>">
-                                                        <?php echo $row['accommodation_image']; ?>
+                                                    <td id="image-<?php echo $row['spakv_id'] ?>">
+                                                        <?php echo $row['spakv_image']; ?>
                                                     </td>
 
-                                                    <td id="phone-<?php echo $row['accommodation_id'] ?>">
-                                                        <?php echo $row['accommodation_phone']; ?>
+                                                    <td id="phone-<?php echo $row['spakv_id'] ?>">
+                                                        <?php echo $row['spakv_phone']; ?>
                                                     </td>
 
-                                                    <td id="hours-<?php echo $row['accommodation_id'] ?>">
-                                                        <?php echo $row['accommodation_hours']; ?>
+                                                    <td id="hours-<?php echo $row['spakv_id'] ?>">
+                                                        <?php echo $row['spakv_hours']; ?>
                                                     </td>
 
-                                                    <td id="category-<?php echo $row['accommodation_id'] ?>">
-                                                        <?php echo $row['accommodation_category']; ?>
+                                                    <td id="category-<?php echo $row['spakv_id'] ?>">
+                                                        <?php echo $row['spakv_category']; ?>
                                                     </td>
 
-                                                    <td id="order-<?php echo $row['accommodation_id'] ?>">
-                                                        <?php echo $row['accommodation_order']; ?>
+                                                    <td id="order-<?php echo $row['spakv_id'] ?>">
+                                                        <?php echo $row['spakv_order']; ?>
                                                     </td>
                                                 </tr>
 
@@ -288,7 +288,7 @@ if (isset($_GET['logout'])) {
                     </div>
                     <div class="modal-footer">
 
-                        <button class="btn btn-primary" type="submit" value="Upload Image" name="upload_accommodation">Create</button>
+                        <button class="btn btn-primary" type="submit" value="Upload Image" name="upload_spakv">Create</button>
 
                     </div>
                 </form>
@@ -355,8 +355,8 @@ if (isset($_GET['logout'])) {
                     </div>
                     <div class="modal-footer">
 
-                        <button type="submit" class="btn btn-danger " name="delete_accommodation">Delete</button>
-                        <button class="btn btn-primary" type="submit" name="edit_accommodation">Save
+                        <button type="submit" class="btn btn-danger " name="delete_spakv">Delete</button>
+                        <button class="btn btn-primary" type="submit" name="edit_spakv">Save
                             Changes</button>
 
                     </div>

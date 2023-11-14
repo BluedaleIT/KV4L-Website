@@ -704,14 +704,21 @@ include 'pagefunctions/edit-blog.php';
 include 'pagefunctions/edit-ebook.php';
 
 
-include 'pagefunctions/edit-explorekl-wte.php';
-include 'pagefunctions/edit-explorekl-wtd.php';
-include 'pagefunctions/edit-explorekl-ss.php';
-include 'pagefunctions/edit-explorekl-nl.php';
-include 'pagefunctions/edit-explorekl-pwor.php';
-include 'pagefunctions/edit-explorekl-p.php';
-include 'pagefunctions/edit-explorekl-kl4k.php';
-include 'pagefunctions/edit-explorekl-hs.php';
+include 'pagefunctions/edit-explorekv_ss.php';
+include 'pagefunctions/edit-explorekv_eco.php';
+include 'pagefunctions/edit-explorekv_agro.php';
+include 'pagefunctions/edit-explorekv_gh.php';
+include 'pagefunctions/edit-explorekv_eo.php';
+include 'pagefunctions/edit-explorekv_pwor.php';
+include 'pagefunctions/edit-explorekv_sports.php';
+include 'pagefunctions/edit-explorekv_no.php';
+include 'pagefunctions/edit-explorekv_kv4k.php';
+include 'pagefunctions/edit-explorekv_ig.php';
+include 'pagefunctions/edit-explorekv_beauty.php';
+include 'pagefunctions/edit-medical_tourism.php';
+include 'pagefunctions/edit-shopkv.php';
+include 'pagefunctions/edit-spakv.php';
+
 
 include 'pagefunctions/edit-beyondkl-es.php';
 include 'pagefunctions/edit-beyondkl-h.php';
@@ -720,6 +727,7 @@ include 'pagefunctions/edit-beyondkl-w.php';
 include 'pagefunctions/edit-beyondkl-i.php';
 
 include 'pagefunctions/edit-accomodation.php';
+
 
 include 'pagefunctions/edit-pts.php';
 

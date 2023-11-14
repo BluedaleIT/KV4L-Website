@@ -542,14 +542,18 @@ while ($row = mysqli_fetch_assoc($result)) {
     </section><!-- End Recent Blog Posts Section -->
 
     <div class="row d-flex justify-content-center btmbanner mt-4">
-      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3696733888071014"
-        crossorigin="anonymous"></script>
-      <!-- Index Hero KLTG -->
-      <ins class="adsbygoogle" align="center" data-ad-client="ca-pub-3696733888071014" data-ad-slot="5212427798"
-        data-ad-format="auto" data-full-width-responsive="true"></ins>
-      <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-      </script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3696733888071014"
+     crossorigin="anonymous"></script>
+<!-- KV4L-Bottom-Bannar -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3696733888071014"
+     data-ad-slot="5737042876"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
     </div>
 
 

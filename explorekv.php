@@ -215,7 +215,7 @@
                             echo '  <div class="card h-100">';
                             echo '    <div class="row  h-100">';
                             echo '      <div class="col-6">';
-                            echo '        <img class="card-img  " src="assets/img/explorekv/pwor/buddhist/' . $row['explorekv_pwor_image'] . '" alt="' . $row['explorekv_pwor_title'] . '" loading="lazy">';
+                            echo '        <img class="card-img  " src="assets/img/explorekv/pwor/tao/' . $row['explorekv_pwor_image'] . '" alt="' . $row['explorekv_pwor_title'] . '" loading="lazy">';
                             echo '      </div>';
                             echo '      <div class="col-6 " >';
                             echo '        <div class="card-body h-100 ">';
@@ -312,7 +312,7 @@
                             echo '  <div class="card h-100">';
                             echo '    <div class="row h-100">';
                             echo '      <div class="col-6">';
-                            echo '        <img class="card-img  " src="assets/img/explorekv/pwor/others/' . $row['explorekv_pwor_image'] . '" alt="' . $row['explorekv_pwor_title'] . '" loading="lazy">';
+                            echo '        <img class="card-img  " src="assets/img/explorekv/pwor/other/' . $row['explorekv_pwor_image'] . '" alt="' . $row['explorekv_pwor_title'] . '" loading="lazy">';
                             echo '      </div>';
                             echo '      <div class="col-6" >';
                             echo '        <div class="card-body h-100 ">';
@@ -1025,7 +1025,7 @@
 
                               </div>
                               <div class="col-md-4 order-1  text-center align-self-center">
-                                <img src="assets/img/explorekv/ss/historical/<?php echo $row['explorekv_ss_image'] ?>"
+                                <img src="assets/img/explorekv/ss/hs/<?php echo $row['explorekv_ss_image'] ?>"
                                   alt="<?php echo urldecode($row['explorekv_ss_title']) ?>" class="img-fluid"
                                   loading="lazy">
                               </div>
@@ -1076,7 +1076,7 @@
 
                               </div>
                               <div class="col-md-4 order-md-2 order-1 text-center align-self-center ">
-                                <img src="assets/img/explorekv/ss/historical/<?php echo $row['explorekv_ss_image'] ?>"
+                                <img src="assets/img/explorekv/ss/hs/<?php echo $row['explorekv_ss_image'] ?>"
                                   alt="<?php echo urldecode($row['explorekv_ss_title']) ?>" class="img-fluid"
                                   loading="lazy">
                               </div>
@@ -1151,7 +1151,7 @@
 
                               </div>
                               <div class="col-md-4 order-1  text-center align-self-center">
-                                <img src="assets/img/explorekv/ss/museums/<?php echo $row['explorekv_ss_image'] ?>"
+                                <img src="assets/img/explorekv/ss/mm/<?php echo $row['explorekv_ss_image'] ?>"
                                   alt="<?php echo urldecode($row['explorekv_ss_title']) ?>" class="img-fluid"
                                   loading="lazy">
                               </div>
@@ -1202,7 +1202,7 @@
 
                               </div>
                               <div class="col-md-4 order-md-2 order-1 text-center align-self-center ">
-                                <img src="assets/img/explorekv/ss/museums/<?php echo $row['explorekv_ss_image'] ?>"
+                                <img src="assets/img/explorekv/ss/mm/<?php echo $row['explorekv_ss_image'] ?>"
                                   alt="<?php echo urldecode($row['explorekv_ss_title']) ?>" class="img-fluid"
                                   loading="lazy">
                               </div>
@@ -1277,7 +1277,7 @@
 
                               </div>
                               <div class="col-md-4 order-1  text-center align-self-center">
-                                <img src="assets/img/explorekv/ss/parks/<?php echo $row['explorekv_ss_image'] ?>"
+                                <img src="assets/img/explorekv/ss/park/<?php echo $row['explorekv_ss_image'] ?>"
                                   alt="<?php echo urldecode($row['explorekv_ss_title']) ?>" class="img-fluid"
                                   loading="lazy">
                               </div>
@@ -1328,7 +1328,7 @@
 
                               </div>
                               <div class="col-md-4 order-md-2 order-1 text-center align-self-center ">
-                                <img src="assets/img/explorekv/ss/parks/<?php echo $row['explorekv_ss_image'] ?>"
+                                <img src="assets/img/explorekv/ss/park/<?php echo $row['explorekv_ss_image'] ?>"
                                   alt="<?php echo urldecode($row['explorekv_ss_title']) ?>" class="img-fluid"
                                   loading="lazy">
                               </div>

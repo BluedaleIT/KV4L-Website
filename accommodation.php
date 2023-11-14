@@ -140,7 +140,7 @@
                 echo '  <div class="card h-100">';
                 echo '    <div class="row h-100">';
                 echo '      <div class="col-6">';
-                echo '        <img class="card-img  " src="assets/img/accommodation/lux/' . $row['accommodation_image'] . '" alt="' . urldecode($row['accommodation_title']) . '" loading="lazy">';
+                echo '        <img class="card-img  " src="assets/img/accommodation/lux/' . urldecode($row['accommodation_image']) . '" alt="' . urldecode($row['accommodation_title']) . '" loading="lazy">';
                 echo '      </div>';
                 echo '      <div class="col-6 " >';
                 echo '        <div class="card-body ">';

@@ -1,7 +1,7 @@
 <?php
 
-// accommodation top
-if (isset($_POST['upload_accommodation'])) {
+// explorekv_kv4k top
+if (isset($_POST['upload_explorekv_kv4k'])) {
 
     $title = urlencode($_POST['title']);
     $content = urlencode($_POST['content']);
@@ -13,18 +13,18 @@ if (isset($_POST['upload_accommodation'])) {
     $category = urlencode($_POST['category']);
     $order = urlencode($_POST['order']);
     $phone = $_POST['phone'];
-    $filename = urlencode(uploadimage($_FILES["filetoupload"], "accommodation/", $category."/"));
+    $filename = urlencode(uploadimage($_FILES["filetoupload"], "wtd/kv4kids", ""));
     // echo "  asd" . $filename;
 
-    $query = "INSERT INTO accommodation (accommodation_title,accommodation_content,accommodation_content2,accommodation_location,accommodation_locationurl,accommodation_image,accommodation_website,accommodation_hours,accommodation_category,accommodation_order,accommodation_phone) 
+    $query = "INSERT INTO explorekv_kv4k (explorekv_kv4k_title,explorekv_kv4k_content,explorekv_kv4k_content2,explorekv_kv4k_location,explorekv_kv4k_locationurl,explorekv_kv4k_image,explorekv_kv4k_website,explorekv_kv4k_hours,explorekv_kv4k_category,explorekv_kv4k_order,explorekv_kv4k_phone) 
                                             VALUES('$title','$content','$content2','$location','$locationurl','$filename','$website','$hours','$category','$order','$phone')";
     mysqli_query($db, $query);
-    array_push($errors2, "Added New accommodation");
+    array_push($errors2, "Added New explorekv_kv4k");
 
 
 }
 
-if (isset($_POST['delete_accommodation'])) {
+if (isset($_POST['delete_explorekv_kv4k'])) {
 
     $id = urlencode($_POST['id']);
     $title = urlencode($_POST['title']);
@@ -38,13 +38,13 @@ if (isset($_POST['delete_accommodation'])) {
     $order = urlencode($_POST['order']);
     $phone = $_POST['phone'];
     $filename = urlencode($_POST['imagename']);
-    $query = "DELETE FROM accommodation WHERE accommodation_id='$id' ";
+    $query = "DELETE FROM explorekv_kv4k WHERE explorekv_kv4k_id='$id' ";
     debug_to_console($filename);
     $update = mysqli_query($db, $query);
     if ($update) {
 
 
-        $status = unlink('../assets/img/accommodation/'.$category. '/' . $filename);
+        $status = unlink('../assets/img/explorekv_kv4k/'.$category. '/' . $filename);
         if ($status) {
 
             array_push($errors2, "Removed");
@@ -58,7 +58,7 @@ if (isset($_POST['delete_accommodation'])) {
         echo "Error updating record: " . mysqli_error($db);
     }
 }
-if (isset($_POST['edit_accommodation'])) {
+if (isset($_POST['edit_explorekv_kv4k'])) {
 
     $id = urlencode($_POST['id']);
     $title = urlencode($_POST['title']);
@@ -76,18 +76,18 @@ if (isset($_POST['edit_accommodation'])) {
     // $filename = $_POST['filename'];
     // $id = $_POST['id'];
 
-    $query = "UPDATE accommodation SET 
-    accommodation_title='$title',
-    accommodation_content='$content',
-    accommodation_content2='$content2',
-    accommodation_location='$location',
-    accommodation_locationurl='$locationurl',
-    accommodation_website='$website',
-    accommodation_hours='$hours',
-    accommodation_category='$category',
-    accommodation_order='$order',
-    accommodation_phone='$phone'
-    WHERE accommodation_id='$id' ";
+    $query = "UPDATE explorekv_kv4k SET 
+    explorekv_kv4k_title='$title',
+    explorekv_kv4k_content='$content',
+    explorekv_kv4k_content2='$content2',
+    explorekv_kv4k_location='$location',
+    explorekv_kv4k_locationurl='$locationurl',
+    explorekv_kv4k_website='$website',
+    explorekv_kv4k_hours='$hours',
+    explorekv_kv4k_category='$category',
+    explorekv_kv4k_order='$order',
+    explorekv_kv4k_phone='$phone'
+    WHERE explorekv_kv4k_id='$id' ";
     // echo ($query);
     $update = mysqli_query($db, $query);
     if ($update) {
@@ -103,6 +103,6 @@ if (isset($_POST['edit_accommodation'])) {
 }
 
 
-// accommodation
+// explorekv_kv4k
 
 
