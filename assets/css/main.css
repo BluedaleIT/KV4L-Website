@@ -574,7 +574,7 @@ section {
 .hero-animated {
   width: 100%;
   height: auto; /* max-height: 30vh; */
-  background: url("../img/most-popular-neighbourhoods-in-KL.jpg") center center;
+  /* background: url("../img/most-popular-neighbourhoods-in-KL.jpg") center center; */
   /* background-color: rgba(var(--color-black-rgb)); */
   background-size: cover;
   position: relative;
